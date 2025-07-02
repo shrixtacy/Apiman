@@ -26,7 +26,7 @@ const BootcampsHero = () => {
               </span>
               <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight transition-colors duration-300">
                 Experience <span className="text-orange-600 dark:text-orange-400">APIMAN</span><br />
-                <span className="text-orange-600 dark:text-orange-400">Preview Bootcamps</span>
+                <span className="text-orange-600 dark:text-orange-400">BUILDCAMP1.0-25</span>
               </h1>
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed transition-colors duration-300">
                 Get a glimpse into our comprehensive 6-month cohorts through intensive preview sessions, mentorship interactions, and hands-on mini-projects.
