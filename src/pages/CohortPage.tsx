@@ -211,8 +211,8 @@ const CohortPage = () => {
                 </div>
                 
                 <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight transition-colors duration-300">
-                  Cohort 1 – The <span className="text-orange-600 dark:text-orange-400">Complete</span><br />
-                  <span className="text-orange-600 dark:text-orange-400">Transformation</span> Track
+                  AP1.25 <span className="text-orange-600 dark:text-orange-400">The 1st</span><br />
+                  <span className="text-orange-600 dark:text-orange-400">Cohort</span> of 2025
                 </h1>
                 
                 <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed transition-colors duration-300">
