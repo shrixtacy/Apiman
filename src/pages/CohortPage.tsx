@@ -16,7 +16,6 @@ import {
   ChevronUp,
   Phone,
   MessageCircle,
-  MapPin,
   Globe
 } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
