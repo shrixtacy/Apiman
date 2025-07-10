@@ -12,6 +12,8 @@ import {
   Award, 
   Target, 
   Rocket,
+  BookOpen,
+  Trophy,
   ChevronDown,
   ChevronUp,
   Phone,
@@ -58,40 +60,46 @@ const CohortPage = () => {
 
   const timeline = [
     {
-      week: "Week 1",
-      title: "Orientation",
-      description: "Meet your cohort, mentors, and set up your learning environment",
-      icon: Users
-    },
-    {
-      week: "Weeks 2-8",
-      title: "Learning Phase",
-      description: "Core concepts, weekly mentor sessions, and skill building",
-      icon: Code
-    },
-    {
-      week: "Weeks 9-12",
-      title: "Micro Projects",
-      description: "Apply your knowledge through hands-on mini-projects",
+      week: "Weeks 1-2",
+      title: "🚩 Discover What to Build",
+      description: "Learn how founders think, identify problems worth solving, and validate your startup idea with real users",
       icon: Target
     },
     {
-      week: "Weeks 13-16",
-      title: "Industry Interaction",
-      description: "Guest speakers, company visits, and real-world exposure",
+      week: "Weeks 3-4",
+      title: "🧠 Prototype & Test",
+      description: "Create a basic prototype in Figma or no-code, launch a landing page, and gather feedback",
+      icon: BookOpen
+    },
+    {
+      week: "Weeks 5-10",
+      title: "💻 Build MVP with BuildStack",
+      description: "Learn to code or collaborate with devs, develop your MVP and test core features",
+      icon: Code
+    },
+    {
+      week: "Weeks 11-16",
+      title: "🎨 Launch Your Brand with BrandStack",
+      description: "Design your visual identity, create content, run real ad campaigns, and drive initial traffic and users",
       icon: Briefcase
     },
     {
       week: "Weeks 17-22",
-      title: "Capstone Project",
-      description: "Build your major project with mentor guidance",
-      icon: Rocket
+      title: "💼 Operate Like a Founder with BizStack",
+      description: "Learn startup operations, sales, pricing, and build and manage a cross-functional team",
+      icon: Users
     },
     {
-      week: "Week 24",
-      title: "Final Showcase",
-      description: "Present your work and network with industry professionals",
-      icon: Award
+      week: "Weeks 21-24",
+      title: "📊 Structure & Pitch Your Startup",
+      description: "Register your company, split equity, build your pitch deck and investor narrative for Demo Day",
+      icon: Trophy
+    },
+    {
+      week: "Weeks 25-36 (Optional)",
+      title: "🚀 Post-Cohort Growth Paths",
+      description: "Internship, startup placement, freelance projects, or join Apiman Studio to build your startup with support",
+      icon: Rocket
     }
   ];
 
@@ -328,10 +336,10 @@ const CohortPage = () => {
         <div className="max-w-6xl mx-auto px-6 relative z-10">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 transition-colors duration-300">
-              Your <span className="text-orange-600 dark:text-orange-400">6-Month Journey</span>
+              <span className="text-orange-600 dark:text-orange-400">Apiman Cohort Journey</span>
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto transition-colors duration-300">
-              A structured path from beginner to industry-ready professional
+              24 Weeks in 7 Key Milestones - From idea validation to Demo Day and beyond
             </p>
           </div>
 
