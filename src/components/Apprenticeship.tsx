@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users, BookOpen, Code, Briefcase, Trophy, Rocket } from 'lucide-react';
+import { Users, BookOpen, Code, Briefcase, Trophy, Rocket, Target } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const Apprenticeship = () => {
@@ -7,52 +7,67 @@ const Apprenticeship = () => {
 
   const programFlowSteps = [
     {
-      icon: Users,
-      title: "Orientation",
-      description: "Path introduction, meet your dedicated mentors and industry trainers, understand the cohort structure",
-      duration: "Week 1",
+      icon: Target,
+      title: "Discover What to Build",
+      description: "Learn how founders think, identify problems worth solving, and validate your startup idea with real users.",
+      duration: "Weeks 1-2",
       color: "from-blue-500 to-blue-600",
-      side: "left"
+      side: "left",
+      milestone: "🚩"
     },
     {
       icon: BookOpen,
-      title: "Learning Phase",
-      description: "Weekly modules with live mentor sessions, interactive workshops, and peer collaboration",
-      duration: "Week 2-12",
+      title: "Prototype & Test",
+      description: "Create a basic prototype in Figma or no-code, launch a landing page, and gather valuable feedback.",
+      duration: "Weeks 3-4",
       color: "from-green-500 to-green-600",
-      side: "right"
+      side: "right",
+      milestone: "🧠"
     },
     {
       icon: Code,
-      title: "Micro-Projects",
-      description: "Applied hands-on tasks and mini-projects to reinforce learning and build practical skills",
-      duration: "Week 6-16",
+      title: "Build MVP with BuildStack",
+      description: "Learn to code or collaborate with devs, develop your MVP and test core features with real users.",
+      duration: "Weeks 5-10",
       color: "from-purple-500 to-purple-600",
-      side: "left"
+      side: "left",
+      milestone: "💻"
     },
     {
       icon: Briefcase,
-      title: "Industry Collaboration",
-      description: "Partnered real-world experience with our industry partners and live project involvement",
-      duration: "Week 12-20",
+      title: "Launch Your Brand with BrandStack",
+      description: "Design your visual identity, create content, run real ad campaigns, and drive initial traffic and users.",
+      duration: "Weeks 11-16",
       color: "from-indigo-500 to-indigo-600",
-      side: "right"
+      side: "right",
+      milestone: "🎨"
+    },
+    {
+      icon: Users,
+      title: "Operate Like a Founder with BizStack",
+      description: "Learn startup operations, sales, pricing strategies, and build and manage a cross-functional team.",
+      duration: "Weeks 17-20",
+      color: "from-pink-500 to-pink-600",
+      side: "left",
+      milestone: "💼"
     },
     {
       icon: Trophy,
-      title: "Major Project Phase",
-      description: "Capstone project creation and development with mentor guidance and peer feedback",
-      duration: "Week 16-22",
-      color: "from-pink-500 to-pink-600",
-      side: "left"
+      title: "Structure & Pitch Your Startup",
+      description: "Register your company, split equity, build your pitch deck and investor narrative for Demo Day.",
+      duration: "Weeks 21-24",
+      color: "from-orange-500 to-orange-600",
+      side: "right",
+      milestone: "📊"
     },
     {
       icon: Rocket,
-      title: "Final Showcase",
-      description: "Demo Day presentation, public project display, and networking with industry professionals",
-      duration: "Week 24",
-      color: "from-orange-500 to-orange-600",
-      side: "right"
+      title: "Post-Cohort Growth Paths",
+      description: "Internship, startup placement, freelance projects, or join Apiman Studio to build your startup with support.",
+      duration: "Weeks 25-36 (Optional)",
+      color: "from-red-500 to-red-600",
+      side: "left",
+      milestone: "🚀"
     }
   ];
 
@@ -75,10 +90,10 @@ const Apprenticeship = () => {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className={`text-center mb-12 animate-on-scroll ${isVisible ? 'animate-fade-in-up' : ''}`}>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 transition-colors duration-300">
-            Your <span className="text-orange-600 dark:text-orange-400">6-Month Cohort Journey</span>
+            <span className="text-orange-600 dark:text-orange-400">Apiman Cohort Journey</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto transition-colors duration-300">
-            A structured program flow designed for maximum learning, building, and networking with industry mentors
+            24 Weeks in 7 Key Milestones - From idea validation to Demo Day and beyond
           </p>
         </div>
 
@@ -88,18 +103,19 @@ const Apprenticeship = () => {
           <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-1 z-10">
             <svg 
               className="absolute inset-0 w-full h-full" 
-              viewBox="0 0 100 600" 
+              viewBox="0 0 100 700" 
               preserveAspectRatio="none"
               style={{ width: '160px', marginLeft: '-80px' }}
             >
               <defs>
                 <linearGradient id="compactPathGradient" x1="0%" y1="0%" x2="0%" y2="100%">
                   <stop offset="0%" stopColor="#3b82f6" />
-                  <stop offset="20%" stopColor="#10b981" />
-                  <stop offset="40%" stopColor="#8b5cf6" />
-                  <stop offset="60%" stopColor="#6366f1" />
-                  <stop offset="80%" stopColor="#ec4899" />
-                  <stop offset="100%" stopColor="#f97316" />
+                  <stop offset="15%" stopColor="#10b981" />
+                  <stop offset="30%" stopColor="#8b5cf6" />
+                  <stop offset="45%" stopColor="#6366f1" />
+                  <stop offset="60%" stopColor="#ec4899" />
+                  <stop offset="75%" stopColor="#f97316" />
+                  <stop offset="100%" stopColor="#ef4444" />
                 </linearGradient>
                 
                 {/* Enhanced orange glow filter */}
@@ -114,7 +130,7 @@ const Apprenticeship = () => {
               
               {/* Compact curved path flowing downward with orange glow */}
               <path
-                d="M 50 0 Q 35 80, 50 160 Q 65 240, 50 320 Q 35 400, 50 480 Q 65 560, 50 600"
+                d="M 50 0 Q 35 90, 50 180 Q 65 270, 50 360 Q 35 450, 50 540 Q 65 630, 50 700"
                 stroke="url(#compactPathGradient)"
                 strokeWidth="4"
                 fill="none"
@@ -124,7 +140,7 @@ const Apprenticeship = () => {
               
               {/* Dotted overlay for animation with orange tint */}
               <path
-                d="M 50 0 Q 35 80, 50 160 Q 65 240, 50 320 Q 35 400, 50 480 Q 65 560, 50 600"
+                d="M 50 0 Q 35 90, 50 180 Q 65 270, 50 360 Q 35 450, 50 540 Q 65 630, 50 700"
                 stroke="#f97316"
                 strokeWidth="2"
                 fill="none"
@@ -147,30 +163,31 @@ const Apprenticeship = () => {
                   className={`flex items-center ${isLeft ? 'flex-row' : 'flex-row-reverse'} gap-6 animate-on-scroll ${isVisible ? `animate-fade-in-${isLeft ? 'left' : 'right'} ${delay}` : ''}`}
                 >
                   {/* Phase Card - Enhanced with more orange gradients */}
-                  <div className={`w-72 group relative ${isLeft ? 'ml-auto' : 'mr-auto'}`}>
+                  <div className={`w-80 group relative ${isLeft ? 'ml-auto' : 'mr-auto'}`}>
                     {/* Multiple layered orange glows */}
                     <div className="absolute -inset-4 bg-gradient-to-br from-orange-400/25 to-orange-600/25 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl"></div>
                     <div className="absolute -inset-2 bg-gradient-to-br from-orange-500/20 to-orange-700/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 blur-lg"></div>
                     <div className="absolute -inset-1 bg-gradient-to-br from-orange-300/15 to-orange-800/15 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-md"></div>
                     
-                    <div className="relative bg-white dark:bg-gray-800 rounded-xl shadow-lg p-5 group-hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700 group-hover:border-orange-200 dark:group-hover:border-orange-700">
-                      {/* Phase Number & Icon - Enhanced with orange accents */}
-                      <div className="flex items-center justify-between mb-3">
-                        <div className="flex items-center gap-2">
-                          <div className={`w-10 h-10 bg-gradient-to-br ${step.color} rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg group-hover:shadow-orange-200 dark:group-hover:shadow-orange-800`}>
-                            <IconComponent className="w-5 h-5 text-white" />
+                    <div className="relative bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 group-hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700 group-hover:border-orange-200 dark:group-hover:border-orange-700">
+                      {/* Milestone Emoji & Phase Number */}
+                      <div className="flex items-center justify-between mb-4">
+                        <div className="flex items-center gap-3">
+                          <div className="text-2xl">{step.milestone}</div>
+                          <div className={`w-12 h-12 bg-gradient-to-br ${step.color} rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg group-hover:shadow-orange-200 dark:group-hover:shadow-orange-800`}>
+                            <IconComponent className="w-6 h-6 text-white" />
                           </div>
-                          <div className="w-6 h-6 bg-gradient-to-br from-orange-500 to-orange-600 text-white rounded-full flex items-center justify-center text-xs font-bold shadow-md">
+                          <div className="w-8 h-8 bg-gradient-to-br from-orange-500 to-orange-600 text-white rounded-full flex items-center justify-center text-sm font-bold shadow-md">
                             {index + 1}
                           </div>
                         </div>
-                        <span className="text-xs text-orange-600 dark:text-orange-400 font-semibold bg-gradient-to-r from-orange-100 to-orange-200 dark:from-orange-900/30 dark:to-orange-800/30 px-2 py-1 rounded-full border border-orange-200 dark:border-orange-700">
+                        <span className="text-xs text-orange-600 dark:text-orange-400 font-semibold bg-gradient-to-r from-orange-100 to-orange-200 dark:from-orange-900/30 dark:to-orange-800/30 px-3 py-1.5 rounded-full border border-orange-200 dark:border-orange-700">
                           {step.duration}
                         </span>
                       </div>
 
                       {/* Content - Enhanced with orange hover effects */}
-                      <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-orange-500 group-hover:to-orange-600 group-hover:bg-clip-text transition-all duration-300">
+                      <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-orange-500 group-hover:to-orange-600 group-hover:bg-clip-text transition-all duration-300">
                         {step.title}
                       </h3>
                       
@@ -179,10 +196,10 @@ const Apprenticeship = () => {
                       </p>
 
                       {/* Enhanced progress indicator with orange gradient */}
-                      <div className="mt-3">
-                        <div className="h-1.5 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+                      <div className="mt-4">
+                        <div className="h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
                           <div 
-                            className={`h-full bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 rounded-full transition-all duration-1000 group-hover:w-full shadow-sm`}
+                            className={`h-2 bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 rounded-full transition-all duration-1000 group-hover:w-full shadow-sm`}
                             style={{ width: `${((index + 1) / programFlowSteps.length) * 100}%` }}
                           ></div>
                         </div>
@@ -197,12 +214,12 @@ const Apprenticeship = () => {
 
                   {/* Enhanced path marker with orange theme */}
                   <div className="flex-shrink-0 relative">
-                    <div className="w-5 h-5 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full shadow-lg flex items-center justify-center border-2 border-orange-200 dark:border-orange-700">
-                      <div className="w-2 h-2 bg-white rounded-full"></div>
+                    <div className="w-6 h-6 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full shadow-lg flex items-center justify-center border-2 border-orange-200 dark:border-orange-700">
+                      <div className="w-2.5 h-2.5 bg-white rounded-full"></div>
                     </div>
                     {/* Enhanced pulsing rings with orange */}
-                    <div className="absolute inset-0 w-5 h-5 bg-orange-400 rounded-full animate-ping opacity-25"></div>
-                    <div className="absolute -inset-1 w-7 h-7 bg-orange-300 rounded-full animate-ping opacity-15 delay-300"></div>
+                    <div className="absolute inset-0 w-6 h-6 bg-orange-400 rounded-full animate-ping opacity-25"></div>
+                    <div className="absolute -inset-1 w-8 h-8 bg-orange-300 rounded-full animate-ping opacity-15 delay-300"></div>
                   </div>
 
                   {/* Enhanced connection line from path */}
@@ -211,7 +228,7 @@ const Apprenticeship = () => {
                   </div>
 
                   {/* Spacer for opposite side */}
-                  <div className="w-72"></div>
+                  <div className="w-80"></div>
                 </div>
               );
             })}
@@ -219,7 +236,7 @@ const Apprenticeship = () => {
 
           {/* Enhanced milestone markers with orange theme */}
           <div className="absolute left-1/2 transform -translate-x-1/2 top-12 bottom-12 pointer-events-none z-15">
-            {[25, 50, 75].map((position, index) => (
+            {[15, 30, 45, 60, 75, 90].map((position, index) => (
               <div
                 key={index}
                 className="absolute transform -translate-x-1/2"
@@ -235,18 +252,22 @@ const Apprenticeship = () => {
         </div>
 
         {/* Enhanced Journey Stats with orange gradients */}
-        <div className={`mt-12 grid md:grid-cols-3 gap-4 animate-on-scroll ${isVisible ? 'animate-fade-in-up animate-delay-800' : ''}`}>
+        <div className={`mt-16 grid md:grid-cols-4 gap-4 animate-on-scroll ${isVisible ? 'animate-fade-in-up animate-delay-800' : ''}`}>
           <div className="text-center bg-gradient-to-br from-white to-orange-50 dark:from-gray-800 dark:to-gray-900 rounded-xl p-4 shadow-md border border-orange-100 dark:border-orange-900/30 hover:shadow-lg hover:border-orange-200 dark:hover:border-orange-800/50 transition-all duration-300">
             <div className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent mb-1">24 Weeks</div>
             <div className="text-gray-600 dark:text-gray-300 font-medium text-sm">Complete Journey</div>
           </div>
           <div className="text-center bg-gradient-to-br from-white to-orange-50 dark:from-gray-800 dark:to-gray-900 rounded-xl p-4 shadow-md border border-orange-100 dark:border-orange-900/30 hover:shadow-lg hover:border-orange-200 dark:hover:border-orange-800/50 transition-all duration-300">
-            <div className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent mb-1">6 Phases</div>
-            <div className="text-gray-600 dark:text-gray-300 font-medium text-sm">Structured Learning</div>
+            <div className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent mb-1">7 Milestones</div>
+            <div className="text-gray-600 dark:text-gray-300 font-medium text-sm">Key Achievements</div>
           </div>
           <div className="text-center bg-gradient-to-br from-white to-orange-50 dark:from-gray-800 dark:to-gray-900 rounded-xl p-4 shadow-md border border-orange-100 dark:border-orange-900/30 hover:shadow-lg hover:border-orange-200 dark:hover:border-orange-800/50 transition-all duration-300">
             <div className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent mb-1">1:1 Mentorship</div>
             <div className="text-gray-600 dark:text-gray-300 font-medium text-sm">Personal Guidance</div>
+          </div>
+          <div className="text-center bg-gradient-to-br from-white to-orange-50 dark:from-gray-800 dark:to-gray-900 rounded-xl p-4 shadow-md border border-orange-100 dark:border-orange-900/30 hover:shadow-lg hover:border-orange-200 dark:hover:border-orange-800/50 transition-all duration-300">
+            <div className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent mb-1">Demo Day</div>
+            <div className="text-gray-600 dark:text-gray-300 font-medium text-sm">Pitch to VCs</div>
           </div>
         </div>
       </div>
