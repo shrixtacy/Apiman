@@ -29,14 +29,15 @@ const Hero = () => {
         {/* Main Headlines */}
         <div className={`mb-12 animate-on-scroll ${isVisible ? 'animate-fade-in-up animate-delay-200' : ''}`}>
           <h2 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight transition-colors duration-300">
-            Ready to transform your<br />
-            <span className="bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
-              learning experience?
-            </span>
+            Introducing <span className="bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">Beyond Degree 25</span>
           </h2>
-          <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed transition-colors duration-300">
-            with Fun, Interactive, Rewarding, Stimulating,<br />
-            Real-world programs
+          <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-6 leading-relaxed transition-colors duration-300">
+            A 6-month immersive cohort where you choose how you learn:<br />
+            <span className="font-semibold text-orange-600 dark:text-orange-400">Design & Marketing</span>, <span className="font-semibold text-orange-600 dark:text-orange-400">AI Powered Tech</span> & <span className="font-semibold text-orange-600 dark:text-orange-400">Startup & Ventures</span>
+          </p>
+          <p className="text-lg md:text-xl text-gray-500 dark:text-gray-400 mb-8 leading-relaxed transition-colors duration-300 italic">
+            Not your typical course. This is where mentorship meets momentum,<br />
+            and learning becomes living.
           </p>
         </div>
 
