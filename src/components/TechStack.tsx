@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { 
-  Code, Database, Globe, Smartphone, Cloud, Server, 
+  Code, /* Database, */ Globe, Smartphone, Cloud, Server, 
   Palette, Figma, Megaphone, BarChart3, Zap, TrendingUp,
   ChevronRight, Star, Sparkles
 } from 'lucide-react';
@@ -13,42 +13,48 @@ const TechStack = () => {
 
   const pathCategories = [
     {
-      title: "Tech Development",
+      title: "BuildStack",
       subtitle: "Build the Future",
-      description: "Master cutting-edge technologies that power tomorrow's digital world",
+      description: "Hands-on mastery of tools and techniques shaping the future of tech, AI, and automation.",
       technologies: [
-        { icon: Code, name: 'JavaScript', level: 95, description: 'Modern ES6+ & TypeScript' },
-        { icon: Globe, name: 'React', level: 92, description: 'Hooks, Context & Next.js' },
-        { icon: Server, name: 'Node.js', level: 88, description: 'Express, APIs & Microservices' },
-        { icon: Database, name: 'MongoDB', level: 85, description: 'NoSQL & Database Design' },
-        { icon: Smartphone, name: 'React Native', level: 82, description: 'Cross-platform Mobile Apps' },
-        { icon: Cloud, name: 'AWS', level: 90, description: 'Cloud Architecture & DevOps' }
+        { icon: Zap, name: 'AI-Powered Tools', level: 96, description: 'Automation, Prompt Engineering, AI Systems' },
+        { icon: Code, name: 'Vibe Coding', level: 92, description: 'Creative & flow-based programming with JS/TS' },
+        { icon: Palette, name: 'Prototype Building', level: 90, description: 'From idea to working demo using low-code + custom stacks' },
+        { icon: Server, name: 'System Thinking', level: 88, description: 'Architecture, APIs & modular workflows' },
+        { icon: BarChart3, name: 'Data Automation', level: 85, description: 'Google Sheets + APIs + AI workflows' },
+        { icon: Smartphone, name: 'No-Code Tools', level: 89, description: 'Zapier, Make, Retool & more' },
+        { icon: Cloud, name: 'Cloud Integration', level: 87, description: 'Working with Firebase, Supabase, Vercel' },
+        { icon: TrendingUp, name: 'Realtime Systems', level: 90, description: 'Live collaboration tools & WebSockets' }
       ]
     },
     {
       title: "Design & Marketing",
-      subtitle: "Create & Convert",
-      description: "Design stunning experiences and drive growth through strategic marketing",
+      subtitle: "Create Impact. Drive Attention.",
+      description: "Master the creative and strategic tools behind the world’s most viral brands and campaigns.",
       technologies: [
-        { icon: Palette, name: 'Figma', level: 94, description: 'UI/UX Design & Prototyping' },
-        { icon: Figma, name: 'Adobe XD', level: 88, description: 'Design Systems & Workflows' },
-        { icon: Megaphone, name: 'Digital Marketing', level: 91, description: 'SEO, SEM & Social Media' },
-        { icon: BarChart3, name: 'Analytics', level: 87, description: 'Data-Driven Insights' },
-        { icon: Globe, name: 'Brand Strategy', level: 85, description: 'Brand Identity & Positioning' },
-        { icon: TrendingUp, name: 'Performance Marketing', level: 89, description: 'Conversion Optimization' }
+        { icon: Palette, name: 'Content Creation', level: 95, description: 'Copywriting, Video Editing & Trend Design' },
+        { icon: Figma, name: 'UI/UX Design', level: 92, description: 'Figma, Prototyping, Human-Centered Design' },
+        { icon: Megaphone, name: 'Social Media Strategy', level: 90, description: 'Instagram, LinkedIn & Viral Content Systems' },
+        { icon: BarChart3, name: 'Multimedia Campaigns', level: 88, description: 'Motion Graphics, Storytelling, Animation' },
+        { icon: TrendingUp, name: 'Performance Ads', level: 86, description: 'Meta Ads, Google Ads, UGC Funnels' },
+        { icon: Globe, name: 'Brand Identity', level: 89, description: 'Color Psychology, Typography, Brand Systems' },
+        { icon: Cloud, name: 'Design Ops', level: 85, description: 'Streamlined Collaboration, Versioning, Delivery' },
+        { icon: Sparkles, name: 'Growth Design', level: 90, description: 'Designs that Convert, Delight & Scale' }
       ]
     },
     {
       title: "Startups & Ventures",
       subtitle: "Launch & Scale",
-      description: "Transform ideas into successful businesses with proven methodologies",
+      description: "Build ventures from 0 to 1 with frameworks, systems, and decision-making used by real-world founders.",
       technologies: [
-        { icon: Zap, name: 'Business Models', level: 93, description: 'Canvas & Strategy Design' },
-        { icon: TrendingUp, name: 'Growth Hacking', level: 90, description: 'Viral Growth & Metrics' },
-        { icon: BarChart3, name: 'Market Analysis', level: 86, description: 'Research & Validation' },
-        { icon: Megaphone, name: 'Pitch Decks', level: 88, description: 'Investor Presentations' },
-        { icon: Database, name: 'MVP Development', level: 84, description: 'Lean Product Development' },
-        { icon: Cloud, name: 'Lean Execution', level: 91, description: 'Agile & Iterative Process' }
+        { icon: Zap, name: 'Business Models', level: 93, description: 'Distribution, Revenue & Sales Channels' },
+        { icon: TrendingUp, name: 'Operations & Strategy', level: 90, description: 'Risk Mitigation, Scaling Ops, Hiring' },
+        { icon: BarChart3, name: 'Finance & Legality', level: 86, description: 'Equity, Registrations, Agreements' },
+        { icon: Megaphone, name: 'Pitch Decks', level: 88, description: 'Investor Stories, Vision Framing, Deck Design' },
+        { icon: Globe, name: 'B2B Sales', level: 84, description: 'Client Outreach, SaaS Funnels, Cold Email' },
+        { icon: Cloud, name: 'D2C Sales', level: 87, description: 'Landing Pages, Retention & Conversion Tactics' },
+        { icon: Sparkles, name: 'Founder Ops', level: 89, description: 'Time Management, Vision Clarity, Delegation' },
+        { icon: BarChart3, name: 'Product-Market Fit', level: 90, description: 'Customer Discovery, Iteration, Validation' }
       ]
     }
   ];
