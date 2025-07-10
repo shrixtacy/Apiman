@@ -31,8 +31,6 @@ const Hero = () => {
           <h2 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight transition-colors duration-300">
             Introducing <span className="bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">Beyond Degree 25</span>
           </h2>
-          <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-4 leading-relaxed transition-colors duration-300">
-            6-month cohort. Choose your path:<br />
             <span className="font-semibold text-orange-600 dark:text-orange-400">Design & Marketing</span>, <span className="font-semibold text-orange-600 dark:text-orange-400">AI Powered Tech</span> & <span className="font-semibold text-orange-600 dark:text-orange-400">Startup & Ventures</span>
           </p>
           <p className="text-lg md:text-xl text-gray-500 dark:text-gray-400 mb-8 leading-relaxed transition-colors duration-300 italic">
