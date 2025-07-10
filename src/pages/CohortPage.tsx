@@ -219,7 +219,7 @@ const CohortPage = () => {
                 </div>
                 
                 <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight transition-colors duration-300">
-                  AP1.25 - <span className="text-orange-600 dark:text-orange-400">The 1st</span><br />
+                  <span className="text-orange-600 dark:text-orange-400">Beyond Degree 25</span> - The 1st<br />
                   <span className="text-orange-600 dark:text-orange-400">Cohort</span> of 2025
                 </h1>
                 
